@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Cyber Battery Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+⚡ CYBER BATTERY ANALYZER
+</h1>
+
+
+<div id="status">
+DISCONNECTED
+</div>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+<h2>🔋 Voltage</h2>
+<p id="voltage">--</p>
+</div>
+
+
+<div class="card">
+<h2>🌡 Temperature</h2>
+<p id="temperature">--</p>
+</div>
+
+
+
+<div class="card">
+<h2>💧 Humidity</h2>
+<p id="humidity">--</p>
+</div>
+
+
+</div>
+
+
+
+<button onclick="connectBLE()">
+CONNECT ESP32
+</button>
+
+
+
+<h2>Voltage History</h2>
+
+<canvas id="voltageChart"></canvas>
+
+
+
+<h2>Temperature History</h2>
+
+<canvas id="tempChart"></canvas>
+
+
+
+<h2>Humidity History</h2>
+
+<canvas id="humidityChart"></canvas>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
